@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>RENT AUTO</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Load a font called Roboto from Google Fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/index-header.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/reservation.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-left-section">
+      <a href="index.html" class="header-link">
+        <img class="index-logo" src="images/logo.png">
+      </a>
+    </div>
+
+    <div class="header-middle-section js-search-section"></div>
+
+    <div class="header-right-section">
+      <a class="reservation-link header-link" href="reservation.html">
+        <span class="reservation-text">Reservation</span>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="main">
+    <div class="products-grid js-car-grid"></div>
+    <div class="reservation-grid js-reservation-grid">
+      <div class="page-title">Review Your Reservation</div>
+      <div class="reservation-details js-reservation"></div>
+      <div class="order-details js-order"></div>
+    </div>
+  </div>
+
+
+  <script type="module" src="scripts/reserve.js"></script>
+  <script type="module" src="data/reservation.js"></script>
+  <script type="module" src="scripts/order.js"></script>
+</body>
+
+</html>

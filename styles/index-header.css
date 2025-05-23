@@ -1,0 +1,154 @@
+.header {
+  background-color: rgb(19, 25, 33);
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+
+.header-left-section {
+  width: 180px;
+}
+
+@media (max-width: 800px) {
+  .header-left-section {
+    width: unset;
+  }
+}
+
+.header-link {
+  display: inline-block;
+  padding: 6px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+
+.index-logo {
+  width: 100px;
+  margin-top: 5px;
+}
+
+
+@media (max-width: 575px) {
+  .index-logo {
+    display: none;
+  }
+}
+
+
+
+.header-middle-section {
+  flex: 1;
+  max-width: 850px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.search-row {
+  display: flex;
+  width: 100%;
+}
+
+.search-container {
+  flex: 1;
+  display: flex;
+  position: relative;
+}
+
+.search-bar,
+.suggestions {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-bar {
+  flex:1;
+  font-size: 16px;
+  height: 38px;
+  padding-left: 15px;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.filters select {
+  height: 38px;
+  font-size: 16px;
+  border: none;
+  padding: 0 10px;
+}
+
+.suggestions {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color:black;
+  background-color: white;
+  border: 1px solid white;
+  border-top: none;
+  z-index: 10;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  padding: 10px 12px;
+}
+
+.suggestion-item {
+  padding: 6px 12px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.search-button {
+  background-color: rgb(254, 189, 105);
+  border: none;
+  width: 45px;
+  height: 38px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  flex-shrink: 0;
+}
+
+.search-icon {
+  height: 22px;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+
+
+.header-right-section {
+  width: 180px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.reservation-link {
+  text-decoration: none;
+  color: inherit;   
+}
+
+.reservation-link:visited,
+.reservation-link:hover,
+.reservation-link:focus,
+.reservation-link:active {
+  text-decoration: none;  
+  color: inherit;         
+  outline: none;          
+}
+
